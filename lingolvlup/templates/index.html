@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tłumacz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id="mySidenav" class="sidenav sidenav-hidden">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/" onclick="closeNav()">Tłumacz</a>
+        <a href="/slownik" onclick="closeNav()">Słownik</a>
+    </div>
+
+    <button class="menu-button" onclick="openNav()">&#9776; Menu</button>
+
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>

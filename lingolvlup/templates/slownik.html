@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+{% block content %}
+    <div id="dictionary-container" class="box">
+        <h2>Słownik</h2>
+        <form method="POST">
+            <label for="selected_lang">Wybierz język źródłowy:</label>
+            <select name="selected_lang" id="selected_lang" onchange="this.form.submit()">
+                <option value="">Wszystkie</option>
+                {% for lang in supported_languages %}
+                    <option value="{{ lang }}" {% if lang == selected_lang %}selected{% endif %}>{{ lang.upper() }}</option>
+                {% endfor %}
+            </select>
+        </form>
+        <ul>
+            {% for word, translation in slownik.items() %}
+                <li>{{ word }} - {{ translation }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
