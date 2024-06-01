@@ -25,7 +25,14 @@ Aplikacja tłumacząca zbudowana przy użyciu Flask. Pozwala użytkownikom na t�
 6. Uruchom aplikację: `flask run`
 7. Otwórz przeglądarkę i przejdź do `http://localhost:5000`
 
+## Konfiguracja
+Aby skonfigurować aplikację, utwórz plik `.env` w głównym katalogu projektu i dodaj swój klucz API:
 
+X_RAPIDAPI_KEY=your_api_key_here
+
+## Wymagania
+- Python 3.6 lub nowszy
+- Konto na [RapidAPI](https://rapidapi.com/) i klucz API: Text Translator(https://rapidapi.com/dickyagustin/api/text-translator2)
 
 ## Autor
 - Maciej K
