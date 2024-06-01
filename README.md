@@ -32,7 +32,7 @@ X_RAPIDAPI_KEY=your_api_key_here
 
 ## Wymagania
 - Python 3.6 lub nowszy
-- Konto na [RapidAPI](https://rapidapi.com/) i klucz API: Text Translator(https://rapidapi.com/dickyagustin/api/text-translator2)
+- Konto na [RapidAPI](https://rapidapi.com/) i klucz API: Text Translator[API](https://rapidapi.com/dickyagustin/api/text-translator2)
 
 ## Autor
 - Maciej K
