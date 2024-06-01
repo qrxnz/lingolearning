@@ -6,7 +6,6 @@ Aplikacja tłumacząca zbudowana przy użyciu Flask. Pozwala użytkownikom na t�
 - Requests
 - Langdetect
 - HTML/CSS
-- Bootstrap (opcjonalnie, do stylizacji)
 
 ## Funkcjonalności
 - Wykrywanie języka źródłowego
