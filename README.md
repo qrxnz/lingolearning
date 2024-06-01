@@ -1,19 +1,31 @@
-# lingolearning
+## Opis projektu
+Aplikacja tłumacząca zbudowana przy użyciu Flask. Pozwala użytkownikom na tłumaczenie tekstu pomiędzy różnymi językami oraz zapisywanie przetłumaczonych fraz w osobistym słowniku.
 
-Ten projekt korzysta z następujących bibliotek open source:
+## Technologie
+- Flask
+- Requests
+- Langdetect
+- HTML/CSS
+- Bootstrap (opcjonalnie, do stylizacji)
 
-- Flask (https://flask.palletsprojects.com/en/2.3.x/)
-    - Licencja: BSD
-    - Autorzy: Armin Ronacher i inni
+## Funkcjonalności
+- Wykrywanie języka źródłowego
+- Tłumaczenie tekstu na wybrany język docelowy
+- Zapisywanie przetłumaczonych fraz
+- Wyświetlanie zapisanych fraz w słowniku
 
-- python-dotenv (https://github.com/theskumar/python-dotenv)
-    - Licencja: BSD
-    - Autor: Saurabh Kumar
+## Instalacja
+1. Sklonuj repozytorium
+2. Przejdź do katalogu projektu
+3. Utwórz wirtualne środowisko: `python -m venv myenv`
+4. Aktywuj wirtualne środowisko:
+   - Windows: `myenv\Scripts\activate`
+   - macOS/Linux: `source myenv/bin/activate`
+5. Zainstaluj zależności: `pip install -r requirements.txt`
+6. Uruchom aplikację: `flask run`
+7. Otwórz przeglądarkę i przejdź do `http://localhost:5000`
 
-- requests (https://requests.readthedocs.io/en/latest/)
-    - Licencja: Apache 2.0
-    - Autorzy: Kenneth Reitz i inni
 
-- langdetect (https://pypi.org/project/langdetect/)
-    - Licencja: LGPL-2.1
-    - Autorzy: Nakatani Shuyo i inni
+
+## Autor
+- Maciej K
