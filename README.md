@@ -25,9 +25,18 @@ Aplikacja tłumacząca zbudowana przy użyciu Flask. Pozwala użytkownikom na t�
 7. Otwórz przeglądarkę i przejdź do `http://localhost:5000`
 
 ## Konfiguracja
-Aby skonfigurować aplikację, utwórz plik `.env` w głównym katalogu projektu i dodaj swój klucz API:
+Aby skonfigurować aplikację, ustaw zmienną środowiskową i dodaj swój klucz API:
 
-X_RAPIDAPI_KEY=your_api_key_here
+```
+export X_RAPIDAPI_KEY="your_api_key_here" # unix
+set X_RAPIDAPI_KEY="your_api_key_here" # windows
+```
+należy dodać jeszcze zmienną dot. konfiguracji entrypoint'u aplikaji:
+
+```
+export FLASK_APP=src.app # unix
+set FLASK_APP=src.app # windows
+```
 
 ## Wymagania
 - Python 3.6 lub nowszy
