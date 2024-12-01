@@ -1,12 +1,8 @@
 import requests
 from flask import Flask, render_template, request, make_response, redirect, url_for
-from dotenv import load_dotenv
 import os
 from langdetect import detect, LangDetectException
 import secrets
-
-# Ładowanie zmiennych środowiskowych z pliku .env
-load_dotenv()
 
 app = Flask(__name__)
 
